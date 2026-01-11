@@ -50,7 +50,7 @@ def remove_from_pool(powerups):
 # Problem 5:
 
 def select_powerup(index, powerups):
-    if index >= -len(powerups) and index < len(powerups): # If index is >= -length and index < length (Remeber, positive starts from 0 and negative starts from -1)
+    if index >= -len(powerups) and index < len(powerups):
         print(powerups[index])
         
 # powerups = ["Blue Shell", "lightning", "GREEN SHELL"]
