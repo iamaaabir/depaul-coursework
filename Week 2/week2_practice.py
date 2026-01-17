@@ -37,6 +37,31 @@ def string_count(filename, target):
 
     return count
 
+# Practice 4
+
+def num_larger(filename, val):
+    fh = open(filename, 'r')
+    nums = []
+
+    for line in fh:
+        str_nums = line.split()
+
+        for str_num in str_nums:
+            nums.append(float(str_num))
+
+        nums.sort()
+
+        for n in nums:
+            if n > val:
+                return n
+    return val
+
+print(num_larger('nums.txt', 0))
+print(num_larger('nums.txt', 10))
+print(num_larger('nums.txt', 13))
+print(num_larger('nums.txt', 14.5))
+
+
 
 
 
