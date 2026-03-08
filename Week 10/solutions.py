@@ -171,7 +171,7 @@ class Collector(HTMLParser):
         return self.linklist
 
 
-class Crawler(object):
+class Crawler:
 
     def __init__(self):
         self.visitedlist = []
