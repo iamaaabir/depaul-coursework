@@ -35,10 +35,10 @@ def count_ints(lst):
         return 0
     elif type(lst[0]) == int:
         total += 1
-    else:
-        count_ints(lst[0])
+    elif type(lst[0]) == list:
+        total += count_ints(lst[0])
     
-    count_ints(lst[1:])
+    total += count_ints(lst[1:])
     
     return total
     
